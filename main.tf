@@ -7,7 +7,7 @@ provider "aws" {
 # You'll need to create this S3 bucket first
 terraform {
   backend "s3" {
-    bucket = "your-terraform-state-bucket"  # Replace with your S3 bucket name
+    bucket = "chaika-terraform-state"  # Replace with your S3 bucket name
     key    = "lab4-5/terraform.tfstate"
     region = "eu-west-2"
   }
